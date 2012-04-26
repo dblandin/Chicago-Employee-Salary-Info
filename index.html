@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<!-- Chicago Employees Salary Info
+	 by Devon Blandin, April 2012
+	 for IT 238, Spring Quarter 2012      -->
+
+<head>
+	<meta charset="utf-8">
+	<title>Chicago Employees</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="ChicagoEmployees.js"></script>
+	<script src="main.js"></script>
+	<script src="https://www.google.com/jsapi?callback=loadGoogleAPIs&key=ABQIAAAA-HgkQ3h85RC9grgGQsrSnhSP5c0xxhF7kkwus1Uc2hzPhLJBLxTWfP5nbXo7i4gExC2Q7K1TO0kBJg"></script>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+	<header>
+		<h1><a href="http://devonblandin">Devon Code Shop</a> | IT 238 Assignments</h1>
+	</header>
+	<section id="main">
+		<h1><a href="http://facsrv.cs.depaul.edu/~cmiller/it238/assn2.html">Assignment 2b</a>: Chicago Employees Salary Info</h1>
+		<noscript class="error">Enable Javascript to use this tool.</noscript>
+		<div class="formRow">
+			<p>Enter first or last name: <input type="text" id="key-word" size="20" /></p>
+		</div>
+		<div class="formRow">
+			<p>In addition to name, display:</p>
+			<input type="checkbox" name="display" value="title" />Title<br />
+			<input type="checkbox" name="display" value="salary" />Salary<br />
+			<input type="checkbox" name="display" value="department" />Department<br />
+		</div>
+		<div class="formRow">
+			<p><input type="button" id="start" value="Submit Query" /></p>
+		</div>
+  		<div id="result">
+  		</div>
+	</section>
+	<section id="sidebar">
+	</section>
+</body>
+</html>
